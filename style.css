@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*-------------navbar--------------------------*/
+#nav-bar{
+    
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
+
+}
+.container-fluid a img{
+    margin-left: 20px;
+    transition: 0.3s ;
+
+}
+.container-fluid a img:hover{
+    transform: scale(1.1);
+}
+#part{
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
+}
+.navbar-nav a{
+    
+    margin: 0 20px;
+    font-weight: 600;
+}
+.navbar-nav a{
+    text-align: center;
+    margin: 5px;
+}
+
+/*---------------------bannaer section---------------*/
+.bannar{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%)
+}
+#btn{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%)
+}
+
+
+
+
+.ht{
+    color:rgb(2,0,36) ;
+    font-size: 50px;
+    font-weight: 800;
+    align-items: center;
+    text-transform: uppercase;
+}
+.accordion{
+    background: transparent;
+    border-radius: 10px;
+
+}
+.accordion-item{
+  border: none;
+}
+.accordion-button{
+    
+    font-weight: 800;
+    color: rgb(2,0,36);
+    
+    outline: none;
+    
+}
+.accordion-button:focus{
+    border: none;
+    box-shadow: none;
+}
+.accordion-button:not(.collapse){
+    background: none;
+}
+.c-item{
+    height: 480px;
+    border-radius: 10px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
