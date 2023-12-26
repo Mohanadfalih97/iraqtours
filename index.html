@@ -7,14 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   
 
     
-    <title>Document</title>
+    <title>Iarq Tours</title>
 </head>
 <body>
-  <section id="nav-bar">
+  <section  data-aos="fade-down" 
+  data-aos-easing="linear"
+  data-aos-duration="1000" id="nav-bar">
  <!---navbar------------------>
  <nav class="navbar navbar-expand-lg navbar-dark ">
   <div class="container-fluid">
@@ -26,24 +32,40 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-lg-auto">
-        <a class="nav-link " aria-current="page" href="https://www.youtube.com/watch?v=nMby0FWGMGk">HOME</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link " href="#" >Disabled</a>
+        <a class="nav-link " aria-current="page" href="./index.html">HOME</a>
+        <a class="nav-link" href="#aboutus">About us</a>
+        <div style="display: flex; justify-content: center; text-align: center; flex-direction: column;" class="dropdown">
+          <button style="color:#8f9092; border: none; font-weight: 700;" class="btn  dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Destinations
+         </button>
+       <ul  class="dropdown-menu py-4">
+          <li><a class="dropdown-item" href="#tour">Baghdad</a></li>
+          <li><a class="dropdown-item" href="#tour">Babylon& Karbala</a></li>
+          <li><a class="dropdown-item" href="#tour">Ur Ziggurat &Marshes</a></li>
+          <li><a class="dropdown-item" href="#tour">Najaf& Uruk</a></li>
+          <li><a class="dropdown-item" href="#tour">Samarra&Hatra</a></li>
+          <li><a class="dropdown-item" href="#tour">Mosul& lalish& Erbil</a></li>
+          
+       </ul>
+      </div>
+      
+        <a   class="nav-link" href="#contact"> Contact </a>
+        <a class="nav-link" href="#blogs"> Blogs </a>
+  
+        
+   
       </div>
     </div>
   </div>
 </nav>
-</section>
-<!-------------bnnar section--------------------------->
-<section  class="bannar ">
+<section class="bannar ">
   <div class="container">
     <div class="d-sm-flex ">
       <div class="d-flex flex-column">
         
         <img class="img-fluid w-100" src="./photo/Q U-logos_white.png" alt="" srcset="">
         
-          <button style="margin-left: 100px; position: relative; top:-20%" class="btn btn-outline-light btn-lg w-50 ">See Packages</button>
+          <button style="margin-left: 100px; position: relative; top:-20%" class="btn btn-outline-light btn-lg w-50  see-btn"><a href="#tour" >See Packages</a></button>
       
 
       </div>
@@ -53,7 +75,7 @@
 
       
       
-        <img class="img-fluid w-25 d-none d-sm-block" src="./photo/Hammura1.png" alt="" srcset="">
+        <img class="img-fluid w-25 d-none d-sm-block " src="./photo/Hammura1.png" alt="" srcset="">
       
     </div>
  
@@ -64,13 +86,376 @@
 
 
 
-  <img class="img-fluid mt-3" style="width: 100%;" src="./photo/wave1.png" alt="" srcset="">
+  <img class="img-fluid mt-5" style="width: 100%;" src="./photo/wave1.png" alt="" srcset="">
 </section>
-<!------------------quesitons-------------------------->
-<section>
-  <div  class="container">
-    <div class="row">
+
+</section>
+<section  data-aos="zoom-in" 
+data-aos-easing="linear"
+data-aos-duration="1000" id="blogs" class="blogs">
+  <div data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-up" class="container">
+    <h1 style=" font-weight: 700; color: rgb(2,0,36); position: relative; top: 1.7cm;">Blogs</h1>
+    <div id="mycarousel" class="carousel slide carousel-fade py-5 carousel-dark mt-5" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active car-item " data-bs-interval="1500" >
+          <div class="over-flayimg" style="background-image: url(./photo/bag.jpeg);" ></div>
+          <div class="container cont">
+            <h1>Tourism in Iraq</h1>
+            
+            <a href="./Tourism in Iraq.html" class="btn btn-primary btn-lg">see it</a>
+          </div>
+        </div>
+        <div class="carousel-item  car-item" data-bs-interval="1500">
+          <div class="over-flayimg" style="background-image: url(./photo/iraqi-dishes.jpg);" ></div>
+          <div class="container cont">
+            <h1>Iraq Dishes</h1>
+            
+            <a href="./iraqfood.html" class="btn btn-primary btn-lg">see it</a>
+          </div>
+        </div>
+        <div class="carousel-item  car-item" data-bs-interval="1500">
+          <div class="over-flayimg" style="background-image: url(./photo/tour2.jpg);" ></div>
+          <div class="container cont">
+          
+            <h1>Cultures of Iraq</h1>
+            
+            <a href="./culturesiraq.html" class="btn btn-primary btn-lg">see it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+   
+  
+
+  </div>
+
+</section>
+
+
+
+<hr class="mt-4" style="margin: 30px; ">
+<!--------------------tour------------------------->
+<section id="tour" class="mt-5">
+  <div class="container ">
+    <h1 style=" font-weight: 700; color: rgb(2,0,36); margin-bottom: 20px;">Packeges</h1>
+    <div class="row ">
+      <div class="col-4 d-none d-lg-inline-block mb-3" >
+        <div class="card " >
+          <img src="./photo/Baghdad-Iraq.jpg" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Baghdad</h5>
+            <p class="card-text">is the capital of Iraq and the second-largest city in the Arab world after Cairo. It is located on the Tigris river. In 762 AD, Baghdad was chosen as the capital of the Abbasid Caliphate.</p>
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-4 d-none d-lg-inline-block mb-3" >
+        <div class="card " >
+          <img src="./photo/erbil.avif" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Erbil</h5>
+            <p class="card-text">is the capital and most populated city in the Kurdistan Region of Iraq. The city is in the Erbil Governorate. Human settlement at Erbil may be dated back to the 5th millennium BC.</p>
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-4 d-none d-lg-inline-block mb-3" >
+        <div class="card " >
+          <img src="./photo/mousl.jpeg" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Mousl</h5>
+            <p class="card-text">is a major city in northern Iraq, serving as the capital of Nineveh Governorate. The city is considered the second-largest city in Iraq in terms of population and area after the capital Baghdad.</p>
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-4 d-none d-lg-inline-block" >
+        <div class="card " >
+          <img src="./photo/iraqi-marsh.jpg" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Marshes</h5>
+            <p class="card-text"> according to ecological definitions  a wetland that is dominated by herbaceous rather than woody plant species.</p>
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-4 d-none d-lg-inline-block " >
+        <div class="card " >
+          <img src="./photo/Babylon.webp" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Babylon</h5>
+            <p class="card-text">Babylon was an ancient city located on the lower Euphrates river in southern Mesopotamia, within modern-day Iraq. </p>
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-4 d-none d-lg-inline-block" >
+        <div class="card " >
+          <img src="./photo/Karbala.avif" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Karbala</h5>
+            <p class="card-text">The city, best known as the location of the Battle of Karbala in 680 AD, or for the shrines of Hussain and Al Abbas. </p>
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-4 d-none d-lg-inline-block mt-3" >
+        <div class="card " >
+          <img src="./photo/najaf.jpg" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Najaf</h5>
+            <p class="card-text">is a city in central Iraq about 160 km (99 mi) south of Baghdad. Its estimated population in 2018 was about 747,000 people. </p>
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-4 d-none d-lg-inline-block mt-3" >
+        <div class="card " >
+          <img src="./photo/samarra.jpg" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Samarra</h5>
+            <p class="card-text"> is a city in Iraq. It stands on the east bank of the Tigris in the Saladin Governorate, 125 kilometers (78 mi) north of Baghdad.</p>
+            
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-4 d-none d-lg-inline-block mt-3" >
+        <div class="card " >
+          <img src="./photo/Uruk.jpg" class="card-img-top" >
+          <div class="card-body ">
+            <h5 class="card-title">Uruk</h5>
+            <p class="card-text">Uruk, today known as Warka, was a city in the ancient Near East situated east of the present bed of the Euphrates River. </p>
+            
+          </div>
+        </div>
+  
+      </div>
+   
+    </div>
+   
+ 
+    
+ 
+
+
+
+
+
+
+
+
+
+    <div id="carouselExample" class="carousel slide d-md-none  d-lg-none ">
+      <div class="carousel-inner">
+        <div class="carousel-item py-4 active">
+          <div class="card-car"  >
+            <div class="back-card" style=" background-image: url(./photo/Baghdad-Iraq.jpg);"></div>
+            <h5 style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Baghdad</h5>
+            <p style="color:white; padding: 20px; position: absolute; bottom: 0;" >is the capital of Iraq and the second-largest city in the Arab world after Cairo. It is located on the Tigris river. In 762 AD, Baghdad was chosen as the capital of the Abbasid Caliphate.</p>
+            
+          </div>
+ 
+        </div>
+        <div class="carousel-item py-4">
+        <div class="card-car" >
+          <div class="back-card" style=" background-image: url(./photo/erbil.avif);"></div>
+
+
+  
+    <h5 style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Erbil</h5>
+    <p style="color:white; padding: 20px; position: absolute; bottom: 0;" >is the capital and most populated city in the Kurdistan Region of Iraq. The city is in the Erbil Governorate. Human settlement at Erbil may be dated back to the 5th millennium BC.</p>
+    
+        </div>
+</div>
+
+        <div class="carousel-item py-4">
+        <div class="card-car " >
+          <div class="back-card" style=" background-image: url(./photo/mousl.jpeg);"></div>
+  
+    <h5 style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Mousl</h5>
+    <p style="color:white; padding: 20px; position: absolute; bottom: 0;" >is a major city in northern Iraq, serving as the capital of Nineveh Governorate. The city is considered the second-largest city in Iraq in terms of population and area after the capital Baghdad.</p>
+    
+  
+</div>
+        </div>
+        <div class="carousel-item py-4">
+          <div class="card-car " >
+            <div class="back-card" style=" background-image: url(./photo/marsh.jpg);"></div>
+    
+      <h5  style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Marshes</h5>
+      <p style="color:white; padding: 20px; position: absolute; margin-top: 52%;" > according to ecological definitions  a wetland that is dominated by herbaceous rather than woody plant species.</p>
       
+    
+  </div>
+          </div>
+          <div class="carousel-item py-4">
+            <div class="card-car " >
+              <div class="back-card" style=" background-image: url(./photo/Babylon.webp);"></div>
+      
+        <h5 style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Babylon</h5>
+        <p style="color:white; padding: 20px; position: absolute;  margin-top: 52%;" >Babylon was an ancient city located on the lower Euphrates river in southern Mesopotamia, within modern-day Iraq.</p>
+        
+      
+    </div>
+            </div>
+            <div class="carousel-item py-4">
+              <div class="card-car " >
+                <div class="back-card" style=" background-image: url(./photo/Karbala.avif);"></div>
+       
+          <h5 style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Karbala</h5>
+          <p style="color:white; padding: 20px; position: absolute; margin-top: 52%;">The city, best known as the location of the Battle of Karbala in 680 AD, or for the shrines of Hussain and Al Abbas. </p>
+          
+        
+      </div>
+              </div>
+              <div class="carousel-item py-4">
+                <div class="card-car " >
+                  <div class="back-card" style=" background-image: url(./photo/najaf.jpg);"></div>
+      
+            <h5 style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Najaf</h5>
+            <p style="color:white; padding: 20px; position: absolute; margin-top: 52%;">is a city in central Iraq about 160 km (99 mi) south of Baghdad. Its estimated population in 2018 was about 747,000 people.</p>
+            
+          
+        </div>
+                </div>
+                <div class="carousel-item py-4 ">
+                  <div class="card-car " >
+                    <div class="back-card" style=" background-image: url(./photo/samarra.jpg);"></div>
+           
+              <h5 style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Samarra</h5>
+              <p style="color:white; padding: 20px; position: absolute; margin-top: 52%;"> is a city in Iraq. It stands on the east bank of the Tigris in the Saladin Governorate, 125 kilometers (78 mi) north of Baghdad.</p>
+              
+            </div>
+          </div>
+                  
+                  <div class="carousel-item py-4 ">
+                    <div class="card-car " >
+                      <div class="back-card" style=" background-image: url(./photo/Uruk.jpg);"></div>
+              
+                <h5 style="color:white; padding: 20px; position: absolute;margin-top: 45%; font-weight: 600;">Uruk</h5>
+                <p style="color:white; padding: 20px; position: absolute; margin-top: 52%;">Uruk today known as Warka, was a city in the ancient Near East situated east of the present bed of the Euphrates River .</p>
+                
+              
+            </div>
+                    </div>
+    
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    
+              
+        
+     
+    </div>
+   
+   
+</section>
+
+
+<!-------------------gallary------------------------------>
+<section style="background: rgb(2,0,36) ;background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);">
+  <img  src="./photo/wave1.2.png"  alt="" sizes="" srcset="">
+ 
+  <div class=" d-flex justify-content-center mt--5 align-content-center ">
+    <h1 class="text-light mt-5" >GALLARY</h1>
+  </div> 
+  <div  data-aos-easing="linear" data-aos-duration="1000" data-aos="flip-right" class="container ">
+    <div id="carousel" class="carousel slide py-5" data-bs-ride="carousel">
+    
+      <div class="carousel-inner">
+        <div class="carousel-item  c-item active" data-bs-interval="1500">
+          <img   src="./photo/p4.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item" data-bs-interval="1300">
+          <img src="./photo/p3.jpg" class="d-block c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p27.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p2.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item "  data-bs-interval="1300">
+          <img src="./photo/p16.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p28.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p24.jpg" class="d-block  c-img" alt="...">
+        </div> 
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p12.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p13.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p14.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p17.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p18.jpg" class="d-block  c-img" alt="...">
+        </div>
+        <div class="carousel-item c-item"  data-bs-interval="1300">
+          <img src="./photo/p19.jpg" class="d-block  c-img" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+   
+     
+    </div>
+
+    
+
+    </div>
+   
+
+  </div>
+  <img class="mt-5" src="./photo/wave1.png" alt="" srcset="">
+</section>
+
+
+
+
+<section class="mb-5">
+  <div  data-aos="zoom-in" 
+  data-aos-easing="linear"
+  data-aos-duration="1000" class="container">
+    <div class="row">
       <div id="div2" class="col-lg-6 w-100  mt-5">
         <h1 style=" font-weight: 700; color: rgb(2,0,36); margin: 20px;">Frequently Asked Questions</h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -98,11 +483,11 @@
           <hr>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <button class="accordion-button collapsed bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseTwo">
                 WHAT IS THE GROUP SIZE?
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">Our groups are capped at 10 people for added flexibility and comfort.</div>
             </div>
           </div>
@@ -120,112 +505,123 @@
           <hr>
         </div>
       </div>
+    
+    </div>
+  </div>
+
+</section>
+<section id="aboutus">
+  <div class="container">
+    <h1 data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom"  style="color:rgb(2,0,36) ; font-weight: 700; margin-bottom: 20px;">About us</h1>
+    <div class="row">
+      <div data-aos-easing="linear" data-aos-duration="1000" data-aos="zoom-in-right" class="col-lg">
+        <img style="border-radius: 10px;" class="img-fluid " src="./photo/person.jpeg" alt="" srcset="">
+      </div>
+      <div data-aos-easing="linear" data-aos-duration="1000" data-aos="zoom-in-left" class="col-lg">
+        <p   style="color:rgb(2,0,36); font-weight: 600; padding: 15px;">I’m Qutaiba Ahmed , Iraqi local guide I adore tourism & hospitality, I think Tourism is a human activity and a developed global civilized industry. that actively contributes to attaining dialogue, tolerance, and peace. Besides, it is a mean of communication and a criterion to measure up the progression of relationships between people of diverse cultural ckgrounds so I choose it as my freelance work which I have all passion about it.I will be your tour guide , driver and translator at the same time in Iraq , take you where ever you want with explanations the history of the land . I will give you significant time that will never forget 🙏🏻 🇮🇶❤️</p>
+      </div>
     </div>
   </div>
 </section>
-<hr class="mt-4" style="margin: 30px; ">
-<!--------------------tour------------------------->
-<section id="tour" class="mt-5">
-  <div class="container ">
-    <h1 class="ht ms-3">Tour</h1>
-    <div class="row mt-3 ">
-      <div class="col col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card" >
-          <img src="./photo/bag.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+<section   id="contact" class="contact ">
+  <img class="img-fluid" style="width: 100%;" src="./photo/shap_white.png" alt="" srcset="">
+  <div data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-down" class="container mb-5">
+    <h1 style="color: white; margin-bottom: 30px;">Contact</h1>
+    <div class="row  d-flex justify-content-between">
+      <div class="col ">
+        <form>
+          <div class="mb-3">
+            <label style="color: white;" for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
           </div>
-        </div>
-      </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card" >
-          <img src="./photo/tour1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="mb-3">
+            <label style="color: white;" for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
           </div>
-        </div>
-      </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card" >
-          <img src="./photo/tour2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="mb-3">
+            <label style="color: white;" for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-        </div>
-      </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card " >
-          <img src="./photo/tour3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col col-lg-4 col-md-6 col-sm-12 mb-3">
-        <div class="card " >
-          <img src="./photo/tour5.jpg" class="card-img-top " alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-
-    
-              
         
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form> 
+      </div>
+      <div class="col-sm-10 col-lg-6 ms-lg-5   d-flex  flex-column icon-itm ">
+        <a  href="">
+          <i class="bi bi-geo-alt-fill">
+            
+          </i>
+          Iraq-baghdad
+            
+            
+            
+        </a>
      
-    </div>
-    <hr class="mt-4" style="margin: 30px; ">
+      
    
+        <a href="">
+          <i style="font-size: 38px;" class="bi bi-envelope"></i>
+          info@quiraqguide.com
+        </a>
+        <a href="">
+          <i style="font-size: 38px;" class="bi bi-telephone"></i>
+          +964 782 425 1210
+        </a>
+       
+    
+      
+      </div>
+    
+      
+  
+    </div>
+  </div>
+  <footer class="mt-5">
+    <div class="container">
+      <h1 style=" font-weight: 700; color: white; margin-bottom: 20px;">Fallow Us</h1>
+      <div class=" gap-5 text-center d-flex flex-row align-content-center icon-item">
+        <a href="">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="">
+          <i class="bi bi-twitter"></i>
+        </a>
+      
+      </div>
+    </div>
+   
+   
+  </footer>
+
+
+ 
+
 </section>
 
-
-<!-------------------gallary------------------------------>
-<section style="background: rgb(2,0,36) ;background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);">
-  <img src="./photo/wave1.2.png"  alt="" sizes="" srcset="">
  
-  <div class=" d-flex justify-content-center mt--5 align-content-center ">
-    <h1 class="text-light" >GALLARY</h1>
-  </div>
-  <div class="container ">
-    <div id="carouselExamp" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExamp" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExamp" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExamp" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item" data-bs-interval="1000">
-          <img   src="./photo/p11.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item" data-bs-interval="1000">
-          <img src="./photo/p13.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-        <div class="carousel-item c-item">
-          <img src="./photo/p15.jpg" class="d-block w-100 c-img" alt="...">
-        </div>
-      </div>
-     
-    </div>
-    
 
-    </div>
+
+
+<section class="copyright text-lg-start">
+  <hr style=" margin: 30px; border: 1px solid white; margin-top: 30px; margin-bottom: 20px;">
   
+  <footer class="text-center text-lg-start">
+ 
+    <div class="content text-center">
+      <p>All rights reserved 2023©<span>Iraq tours</span> Developed and Designed by:<span>CodeGXiq</span> </p>
+    
+     </div>
+  </footer>
 
-  </div>
-  <img class="mt-5" src="./photo/wave1.png" alt="" srcset="">
+  
 </section>
 
 
@@ -239,5 +635,9 @@
 
     
  <script src="js/bootstrap.bundle.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
 </body>
 </html>

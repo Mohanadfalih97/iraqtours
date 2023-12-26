@@ -1,7 +1,24 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    ::-webkit-scrollbar{
+        width: 8.5px;
+    
+    }
+  
+    ::-webkit-scrollbar-thumb{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
+      
+
+
+    }
+        
+    
+    
 }
+
 /*-------------navbar--------------------------*/
 #nav-bar{
     
@@ -20,6 +37,28 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
 }
 .container-fluid a img:hover{
     transform: scale(1.1);
+}
+
+.dropdown-menu{
+    background: white;
+    background-position: center;
+    background-size: cover;
+    
+    border: none;
+    font-weight: 700;
+}
+
+.dropdown-menu li a{
+    color: gray;
+    font-size: small;
+
+    
+    font-weight: 500;
+
+}
+
+.dropdown-menu li :hover{
+    background: none;
 }
 #part{
  background: rgb(2,0,36);
@@ -44,6 +83,44 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%)
 }
+
+.car-item{
+    height: 32rem;
+    background-color: black;
+    color: white;
+    position: relative;
+ 
+}
+.cont{
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+.over-flayimg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position:center;
+    
+    background-size: cover;
+    opacity: 0.5;
+}
+.see-btn a{
+    text-decoration: none;
+    color:white;
+
+}
+.see-btn a:hover{
+    color: rgb(2,0,36);
+}
+
+
+
 
 
 
@@ -78,12 +155,173 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
 .accordion-button:not(.collapse){
     background: none;
 }
-.c-item{
-    height: 480px;
+.carousel-inner{
     border-radius: 10px;
+}
+.c-item{
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    
 }
 .c-img{
     height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
+.contact{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%)
+}
+.icon-item{
+    margin-top: 10px;
+    
+} 
+.icon-item a{
+    color: white;
+    font-size: xx-large;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+.icon-item a:hover{
+    background: white;
+    color:rgb(2,0,36) ;
+    transform: scale(1.1);
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+.icon-itm{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+.icon-itm a i{
+    font-size: xx-large;
+    margin-right: 10px;
+}
+.icon-itm a{
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    text-decoration: none;
+   
+
+    
+    
+}
+.icon-itm a i{
+    font-size: xx-large;
+    
+
+  
+}
+
+.card-car{
+   
+         height: 390px;
+          width: 100%;
+            border-radius: 10px;
+             display: flex;
+              flex-direction: column;
+              position: relative;
+              background: black;
+              
+}
+
+.back-card{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+   
+    border-radius: 10px;
+    
+    background-position: center;
+     background-size: cover;
+    
+      
+      opacity: 0.6;
+      
+
+}
+
+
+@media screen and (max-width:990px) {
+    *{
+        max-width: 100%;
+    }
+    .img-t{
+
+    }
+    .c-item{
+        height: 380px;
+        border-radius: 10px;
+        
+    }
+    .c-img{
+        height: 390px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    
+}
+.car-item{
+    height: 380px;
+    
+    
+}
+.icon-itm{
+    margin-top: 20px;
+}
+
+
+
+
+}
+.tourism{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
+
+
+}
+.img-t{
+    width: 40%;
+    height: 25%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 28%;
+    margin-top: 50px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3px;
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
+    
+    
+
+}
+
+
+.content p{
+    color: white;
+    font-size: larger;
+    margin-top: 20px;
+}
+.content p span{
+    color: goldenrod;
+}
+
+
+
