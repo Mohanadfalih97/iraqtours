@@ -111,6 +111,17 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
     background-size: cover;
     opacity: 0.5;
 }
+.over-flayimg1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position:center;
+    object-fit: cover;
+    background-size: cover;
+    
+}
 .see-btn a{
     text-decoration: none;
     color:white;
@@ -286,6 +297,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
 
 
 
+
 }
 .tourism{
     max-width: 100%;
@@ -328,6 +340,51 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
 .content p span{
     color: goldenrod;
 }
+.Baghdad{
+        
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 73%, rgba(19,31,34,1) 100%);
+    
+    
+    
+}
+.Details{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.Details h3 {
+    color: white;
+    
+    font-weight: 700;
+    padding: 15px;
+    margin-top: 30px;
+}
 
+.Details ul{
+    color: white;
+    margin: 5px;
+    font-size: larger;
+   
+    font-weight: 500;
+}
+.Details ul li{
+    margin: 15px;
+}
+.Details > ul ::marker{
+    font-size: 1.6rem;
+    color: goldenrod;
+}
+.butten::after{
+    content: "";
+    
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+
+  
 
 
